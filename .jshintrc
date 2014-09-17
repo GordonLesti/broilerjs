@@ -12,5 +12,8 @@
     "trailing": true,
     "undef": true,
     "unused": true,
-    "node": true
+    "predef" : [
+        "define",
+        "require"
+    ]
 }

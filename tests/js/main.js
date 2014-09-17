@@ -5,6 +5,6 @@ require.config({
     }
 });
 
-require(['app'], function (App) {
+require([ "app" ], function(App) {
     App.initialize();
 });
