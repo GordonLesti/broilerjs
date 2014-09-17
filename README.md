@@ -1,4 +1,4 @@
 broilerjs
 =========
 
-A simple jQuery Plugin to get the color of a image pixel by click
+A simple jQuery Plugin to get the color of an image pixel by click
