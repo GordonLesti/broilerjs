@@ -15,6 +15,10 @@ Include script *after* the jQuery library (unless you are packaging scripts some
 
 The plugin can also be loaded as AMD or CommonJS module.
 
+## Demo
+
+Here is a small [demo](http://gordonlesti.com/broilerjs/demo/rainbow.html)
+
 ## Usage
 
 ```javascript
