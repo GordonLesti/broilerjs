@@ -1,0 +1,4 @@
+{
+    "qunit": true,
+    "extends": "../.jshintrc"
+}
