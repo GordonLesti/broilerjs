@@ -5,13 +5,12 @@
     "eqnull": true,
     "expr": true,
     "immed": true,
+    "jquery": true,
     "noarg": true,
     "node": true,
     "onevar": true,
     "predef" : [
-        "define",
-        "require",
-        "casper"
+        "define"
     ],
     "quotmark": "double",
     "smarttabs": true,

@@ -1,16 +1,26 @@
-define([
-    "jquery"
-], function($) {
+(function(factory) {
     "use strict";
-    function Broiler(identifier, callBack) {
-        var image = $(identifier)[0],
+    if (typeof define === "function" && define.amd) {
+        // AMD
+        define([ "jquery" ], factory);
+    } else if (typeof exports === "object") {
+        // CommonJs
+        factory(require("jquery"));
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(function($) {
+    "use strict";
+    $.fn.broiler = function(callBack) {
+        var image = this[0],
             canvas = $("<canvas/>")[0],
             imageData;
         canvas.width = image.width;
         canvas.height = image.height;
         canvas.getContext("2d").drawImage(image, 0, 0, image.width, image.height);
         imageData = canvas.getContext("2d").getImageData(0, 0, image.width, image.height).data;
-        $(identifier).click(function(event) {
+        this.click(function(event) {
             var offset = $(this).offset(), x, y, start;
             x = Math.round(event.clientX - offset.left);
             y = Math.round(event.clientY - offset.top);
@@ -22,7 +32,5 @@ define([
                 "a": imageData[start + 3]
             });
         });
-    }
-
-    return Broiler;
-});
+    };
+}));

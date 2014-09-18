@@ -6,14 +6,7 @@ node_js:
 install:
   - npm install -g jshint
   - npm install -g jscs
-  - npm install -g http-server
-  - npm install -g phantomjs
-  - npm install -g casperjs
-
-before_script:
-  - http-server . -a localhost -p 8080 &
 
 script:
   - jshint .
   - jscs .
-  - casperjs test tests/casperjs/*.js

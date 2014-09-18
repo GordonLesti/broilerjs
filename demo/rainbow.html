@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Broiler Test Rainbow</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../src/jquery.broiler.js"></script>
+    <script>
+        $(function() {
+            $("#rainbow").broiler(function(color) {
+                var hex = "#" + ((1 << 24) + (color.r << 16) + (color.g << 8) + color.b).toString(16).slice(1);
+                $("#panel").css("background-color", hex);
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Broiler Test Rainbow</h1>
+<img id="rainbow" src="img/rainbow.png"/>
+<div id="panel" style="background-color: black; width: 600px; height: 30px; margin-top: 5px;"></div>
+</body>
+</html>
