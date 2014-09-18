@@ -1,0 +1,29 @@
+{
+  "name": "broilerjs",
+  "version": "1.0.0",
+  "description": "A simple, lightweight jQuery plugin to get the color of an image pixel by click.",
+  "main": "src/broiler.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GordonLesti/broilerjs.git"
+  },
+  "keywords": [
+    "jquery",
+    "broiler",
+    "image",
+    "pixel",
+    "color"
+  ],
+  "author": "Gordon Lesti",
+  "license": "MPL",
+  "bugs": {
+    "url": "https://github.com/GordonLesti/broilerjs/issues"
+  },
+  "homepage": "https://github.com/GordonLesti/broilerjs",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
