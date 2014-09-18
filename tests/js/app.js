@@ -2,6 +2,7 @@ define([
     "jquery",
     "broiler"
 ], function($, Broiler) {
+    "use strict";
     var initialize = function() {
         $(function() {
             new Broiler("#rainbow", function(color) {

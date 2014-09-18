@@ -1,6 +1,7 @@
 define([
     "jquery"
 ], function($) {
+    "use strict";
     function Broiler(identifier, callBack) {
         var image = $(identifier)[0],
             canvas = $("<canvas/>")[0],
