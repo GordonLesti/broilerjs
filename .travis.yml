@@ -4,9 +4,7 @@ node_js:
   - "0.10"
 
 install:
-  - npm install -g jshint
-  - npm install -g jscs
+  - npm install -g grunt-cli
 
 script:
-  - jshint .
-  - jscs .
+  - grunt

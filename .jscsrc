@@ -1,4 +1,3 @@
 {
-    "preset": "jquery",
-    "excludeFiles": ["tests/js/libs"]
+    "preset": "jquery"
 }

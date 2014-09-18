@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/GordonLesti/broilerjs",
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-jscs": "^0.7.1"
   }
 }
