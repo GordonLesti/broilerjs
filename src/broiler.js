@@ -21,9 +21,11 @@
         canvas.getContext("2d").drawImage(image, 0, 0, image.width, image.height);
         imageData = canvas.getContext("2d").getImageData(0, 0, image.width, image.height).data;
         this.click(function(event) {
-            var offset = $(this).offset(), x, y, start;
-            x = Math.round(event.clientX - offset.left);
-            y = Math.round(event.clientY - offset.top);
+            var offset = $(this).offset(), x, y, scrollLeft, scrollTop, start;
+            scrollLeft = $(window).scrollLeft();
+            scrollTop = $(window).scrollTop();
+            x = Math.round(event.clientX - offset.left + scrollLeft);
+            y = Math.round(event.clientY - offset.top + scrollTop);
             start = (x + y * image.width) * 4;
             callBack({
                 "r": imageData[start],
