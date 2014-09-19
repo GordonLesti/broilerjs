@@ -1,4 +1,20 @@
-QUnit.test( "hello test", function( assert ) {
+QUnit.test( "rainbow test", function( assert ) {
     "use strict";
-    assert.ok( 1 === 1, "Passed!" );
+    var offset = $("#rainbow").offset(),
+        scrollLeft = $(window).scrollLeft(),
+        scrollTop = $(window).scrollTop(),
+        event = $.Event("click"),
+        result;
+    $("#rainbow").broiler(function(color) {
+        result = color;
+    });
+    event.clientX = 75 + offset.left - scrollLeft;
+    event.clientY = 15 + offset.top - scrollTop;
+    $("#rainbow").trigger(event);
+    assert.deepEqual(result, {
+        r: 255,
+        g: 153,
+        b: 0,
+        a: 255
+    });
 });

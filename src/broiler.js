@@ -25,13 +25,14 @@
             scrollLeft = $(window).scrollLeft();
             scrollTop = $(window).scrollTop();
             x = Math.round(event.clientX - offset.left + scrollLeft);
+            console.log(event.clientX);
             y = Math.round(event.clientY - offset.top + scrollTop);
             start = (x + y * image.width) * 4;
             callBack({
-                "r": imageData[start],
-                "g": imageData[start + 1],
-                "b": imageData[start + 2],
-                "a": imageData[start + 3]
+                r: imageData[start],
+                g: imageData[start + 1],
+                b: imageData[start + 2],
+                a: imageData[start + 3]
             });
         });
     };
