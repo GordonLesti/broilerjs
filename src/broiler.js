@@ -25,7 +25,6 @@
             scrollLeft = $(window).scrollLeft();
             scrollTop = $(window).scrollTop();
             x = Math.round(event.clientX - offset.left + scrollLeft);
-            console.log(event.clientX);
             y = Math.round(event.clientY - offset.top + scrollTop);
             start = (x + y * image.width) * 4;
             callBack({
