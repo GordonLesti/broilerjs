@@ -4,7 +4,6 @@ module.exports = function(grunt) {
         // Windows 7
         { browserName: "chrome", version: "37", platform: "Windows 7" },
         { browserName: "firefox", version: "32", platform: "Windows 7" },
-        { browserName: "internet explorer", version: "8", platform: "Windows 7" },
         { browserName: "internet explorer", version: "9", platform: "Windows 7" },
         { browserName: "internet explorer", version: "10", platform: "Windows 7" },
         { browserName: "internet explorer", version: "11", platform: "Windows 7" },
