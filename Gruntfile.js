@@ -1,5 +1,13 @@
 module.exports = function(grunt) {
     "use strict";
+    var browsers = [
+        {
+            browserName: "firefox",
+            version: "32",
+            platform: "linux"
+        }
+    ];
+
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
         qunit: {
@@ -34,15 +42,38 @@ module.exports = function(grunt) {
                 src: "src/broiler.js",
                 dest: "build/broiler-<%= pkg.version %>.min.js"
             }
-        }
+        },
+        connect: {
+            server: {
+                options: {
+                    base: "",
+                    port: 9999
+                }
+            }
+        },
+        "saucelabs-qunit": {
+            all: {
+                options: {
+                    urls: ["http://127.0.0.1:9999/test/index.html"],
+                    tunnelTimeout: 5,
+                    build: process.env.TRAVIS_JOB_ID,
+                    concurrency: 3,
+                    browsers: browsers,
+                    testname: "qunit tests",
+                    tags: [ "master" ]
+                }
+            }
+        },
+        watch: {}
     });
 
-    grunt.loadNpmTasks("grunt-contrib-qunit");
-    grunt.loadNpmTasks("grunt-contrib-jshint");
-    grunt.loadNpmTasks("grunt-jscs");
-    grunt.loadNpmTasks("grunt-jsonlint");
-    grunt.loadNpmTasks("grunt-contrib-uglify");
+    // Loading dependencies
+    for (var key in grunt.file.readJSON("package.json").devDependencies) {
+        if (key !== "grunt" && key.indexOf("grunt") === 0) grunt.loadNpmTasks(key);
+    }
 
     grunt.registerTask("default", [ "jshint", "jscs", "jsonlint", "qunit", "uglify" ]);
-    grunt.registerTask("ci", [ "jshint", "jscs", "qunit", "jsonlint" ]);
+    grunt.registerTask("dev", ["connect", "watch"]);
+    grunt.registerTask("saucelabs", ["connect", "saucelabs-qunit"]);
+    grunt.registerTask("ci", [ "jshint", "jscs", "qunit", "jsonlint", "saucelabs" ]);
 };
