@@ -1,11 +1,31 @@
 module.exports = function(grunt) {
     "use strict";
     var key, browsers = [
-        {
-            browserName: "firefox",
-            version: "32",
-            platform: "linux"
-        }
+        // Windows 7
+        { browserName: "chrome", version: "37", platform: "Windows 7" },
+        { browserName: "firefox", version: "32", platform: "Windows 7" },
+        { browserName: "internet explorer", version: "8", platform: "Windows 7" },
+        { browserName: "internet explorer", version: "9", platform: "Windows 7" },
+        { browserName: "internet explorer", version: "10", platform: "Windows 7" },
+        { browserName: "internet explorer", version: "11", platform: "Windows 7" },
+        // Windows 8.1
+        { browserName: "chrome", version: "37", platform: "Windows 8.1" },
+        { browserName: "firefox", version: "32", platform: "Windows 8.1" },
+        { browserName: "internet explorer", version: "11", platform: "Windows 8.1" },
+        // Mac
+        { browserName: "chrome", version: "36", platform: "OS X 10.9" },
+        { browserName: "firefox", version: "32", platform: "OS X 10.9" },
+        { browserName: "safari", version: "6", platform: "OS X 10.8" },
+        { browserName: "safari", version: "7", platform: "OS X 10.9" },
+        // Linux
+        { browserName: "chrome", version: "36", platform: "Linux" },
+        { browserName: "firefox", version: "32", platform: "Linux" },
+        // iOS
+        { browserName: "iphone", version: "7.1", platform: "OS X 10.9" },
+        { browserName: "ipad", version: "7.1", platform: "OS X 10.9" },
+        // Androis
+        { browserName: "android", version: "4.3", platform: "Linux" },
+        { browserName: "android", version: "4.4", platform: "Linux" }
     ];
 
     grunt.initConfig({
