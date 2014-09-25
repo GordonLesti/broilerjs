@@ -1,3 +1,10 @@
+QUnit.done(function(details) {
+    "use strict";
+    // jscs:disable requireCamelCaseOrUpperCaseIdentifiers
+    window.global_test_results = details;
+    // jscs:enable requireCamelCaseOrUpperCaseIdentifiers
+});
+
 QUnit.test( "rainbow test", function( assert ) {
     "use strict";
     var offset = $("#rainbow").offset(),
