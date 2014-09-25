@@ -2,8 +2,8 @@ broilerjs
 =========
 
 [![Build Status](https://travis-ci.org/GordonLesti/broilerjs.svg?branch=master)](https://travis-ci.org/GordonLesti/broilerjs)
-[![Code Climate](https://codeclimate.com/github/GordonLesti/broilerjs/badges/gpa.svg)](https://codeclimate.com/github/GordonLesti/broilerjs)
 [![Sauce Test Status](https://saucelabs.com/buildstatus/GordonLesti)](https://saucelabs.com/u/GordonLesti)
+[![Code Climate](https://codeclimate.com/github/GordonLesti/broilerjs/badges/gpa.svg)](https://codeclimate.com/github/GordonLesti/broilerjs)
 
 ## Build Status Matrix
 
