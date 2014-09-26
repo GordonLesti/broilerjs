@@ -67,8 +67,12 @@
                         min_abs = abs;
                     }
                 }
-                $("#stuff").attr("src", "img/"+library[min_index].id+".jpg");
                 $("#stuff_label").text(library[min_index].name+" "+library[min_index].id);
+                $("#stuff_color").css(
+                        "background-color", "#" + ((1 << 24) + (library[min_index].r << 16) +
+                                (library[min_index].g << 8) + library[min_index].b).toString(16).slice(1)
+                );
+                $("#stuff_image").css("background-image", "url('img/"+library[min_index].id+".jpg')");
             });
         });
     </script>
@@ -76,7 +80,9 @@
 <body>
 <h1>Broiler Demo Street Fighter Wool</h1>
 <img id="streetfighter" src="img/streetfighter.png"/>
-<img id="stuff" src="img/00110.jpg"/>
-<label id="stuff_label">schwarz 00110</label>
+<br/>
+<h2 id="stuff_label">schwarz 00110</h2>
+<div id="stuff_color" style="width: 600px; height: 60px; background-color: #000000;"></div>
+<div id="stuff_image" style="width: 600px; height: 60px; background-image: url('img/00110.jpg');"></div>
 </body>
 </html>
