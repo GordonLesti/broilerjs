@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         // iOS
         { browserName: "iphone", version: "7.1", platform: "OS X 10.9" },
         { browserName: "ipad", version: "7.1", platform: "OS X 10.9" },
-        // Androis
+        // Android
         { browserName: "android", version: "4.3", platform: "Linux" },
         { browserName: "android", version: "4.4", platform: "Linux" }
     ];
