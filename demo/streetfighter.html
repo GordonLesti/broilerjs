@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Broiler Demo Street Fighter Wool</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../src/broiler.js"></script>
+    <script>
+        var library = [
+            { "r": 234, "g": 226, "b": 162, "name": "mimose", "id": "00100" },
+            { "r": 234, "g": 231, "b": 223, "name": "natur", "id": "00105" },
+            { "r": 233, "g": 232, "b": 236, "name": "weiß", "id": "00106" },
+            { "r": 24, "g": 23, "b": 28, "name": "schwarz", "id": "00110" },
+            { "r": 88, "g": 57, "b": 120, "name": "violett", "id": "00113" },
+            { "r": 198, "g": 29, "b": 114, "name": "cyclam", "id": "00114" },
+            { "r": 185, "g": 18, "b": 33, "name": "signalrot", "id": "00115" },
+            { "r": 19, "g": 36, "b": 63, "name": "marine", "id": "00124" },
+            { "r": 124, "g": 9, "b": 79, "name": "fuchsia", "id": "00128" },
+            { "r": 229, "g": 220, "b": 202, "name": "crème", "id": "00130" },
+            { "r": 24, "g": 148, "b": 195, "name": "pfau", "id": "00146" },
+            { "r": 73, "g": 41, "b": 43, "name": "kaffee", "id": "00162" },
+            { "r": 11, "g": 61, "b": 98, "name": "jeans", "id": "00164" },
+            { "r": 156, "g": 186, "b": 207, "name": "hellblau", "id": "00173" },
+            { "r": 229, "g": 81, "b": 33, "name": "jaffa", "id": "00189" },
+            { "r": 153, "g": 13, "b": 65, "name": "weinrot", "id": "00192" },
+            { "r": 7, "g": 79, "b": 141, "name": "royal", "id": "00201" },
+            { "r": 144, "g": 168, "b": 56, "name": "apfel", "id": "00205" },
+            { "r": 240, "g": 179, "b": 31, "name": "sonne", "id": "00208" },
+            { "r": 95, "g": 127, "b": 68, "name": "khaki", "id": "00212" },
+            { "r": 231, "g": 144, "b": 174, "name": "orchidee", "id": "00222" },
+            { "r": 203, "g": 174, "b": 203, "name": "flieder", "id": "00226" },
+            { "r": 119, "g": 63, "b": 104, "name": "hyazinth", "id": "00240" },
+            { "r": 41, "g": 149, "b": 113, "name": "golfgrün", "id": "00241" },
+            { "r": 25, "g": 64, "b": 73, "name": "agave", "id": "00244" },
+            { "r": 207, "g": 201, "b": 44, "name": "anis", "id": "00245" },
+            { "r": 244, "g": 192, "b": 215, "name": "rosa", "id": "00246" },
+            { "r": 81, "g": 142, "b": 190, "name": "wolke", "id": "00247" },
+            { "r": 198, "g": 186, "b": 173, "name": "leinen", "id": "00248" },
+            { "r": 203, "g": 75, "b": 144, "name": "fresie", "id": "00251" },
+            { "r": 231, "g": 85, "b": 86, "name": "kamelie", "id": "00252" },
+            { "r": 47, "g": 165, "b": 154, "name": "taupe", "id": "00254" },
+            { "r": 231, "g": 76, "b": 117, "name": "himbeer", "id": "00256" },
+            { "r": 198, "g": 171, "b": 162, "name": "bast", "id": "00257" },
+            { "r": 170, "g": 49, "b": 77, "name": "erdbeere", "id": "00258" },
+            { "r": 69, "g": 98, "b": 146, "name": "regatta", "id": "00261" },
+            { "r": 237, "g": 209, "b": 199, "name": "soft apricot", "id": "00263" },
+            { "r": 179, "g": 109, "b": 29, "name": "zimt", "id": "00383" },
+            { "r": 240, "g": 137, "b": 30, "name": "orange", "id": "00281" },
+            { "r": 247, "g": 219, "b": 77, "name": "löwenzahn", "id": "00280" },
+            { "r": 29, "g": 134, "b": 195, "name": "capri", "id": "00384" },
+            { "r": 125, "g": 47, "b": 119, "name": "phlox", "id": "00282" },
+            { "r": 168, "g": 214, "b": 211, "name": "mint", "id": "00385" },
+            { "r": 241, "g": 148, "b": 86, "name": "orangelachs", "id": "00386" },
+            { "r": 80, "g": 70, "b": 61, "name": "fango", "id": "00387" },
+            { "r": 183, "g": 56, "b": 39, "name": "terracotta", "id": "00388" },
+            { "r": 122, "g": 192, "b": 137, "name": "maigrün", "id": "00389" },
+            { "r": 228, "g": 67, "b": 46, "name": "tomate", "id": "00390" }
+        ];
+        $(function() {
+            $("#streetfighter").broiler(function(color) {
+                var min_index = 0, min_abs = 766, i;
+                for (i = 0; i < library.length; i++) {
+                    var abs = Math.abs(color.r - library[i].r) +
+                            Math.abs(color.g - library[i].g) +
+                            Math.abs(color.b - library[i].b);
+                    if (abs < min_abs) {
+                        min_index = i;
+                        min_abs = abs;
+                    }
+                }
+                $("#stuff").attr("src", "img/"+library[min_index].id+".jpg");
+                $("#stuff_label").text(library[min_index].name+" "+library[min_index].id);
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Broiler Demo Street Fighter Wool</h1>
+<img id="streetfighter" src="img/streetfighter.png"/>
+<img id="stuff" src="img/00110.jpg"/>
+<label id="stuff_label">schwarz 00110</label>
+</body>
+</html>
