@@ -6,7 +6,7 @@ broilerjs
 
 ## Build Status Matrix
 
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/GordonLesti.svg)](https://saucelabs.com/u/GordonLesti)
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/broilerjs.svg)](https://saucelabs.com/u/broilerjs)
 
 A simple, lightweight jQuery plugin to get the color of an image pixel by click.
 
