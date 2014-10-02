@@ -28,6 +28,6 @@ Here is a small [demo](http://gordonlesti.com/broilerjs/demo/rainbow.html)
 
 ```javascript
 $("#image").broiler(function(color) {
-  // do what ever you want with the color object, for example a alert
+  // do what ever you want with the color object, for example an alert
   alert("red:"+color.r+" green:"+color.g+" blue:"+color.b+" alpha:"+color.a);
 });
