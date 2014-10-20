@@ -2,6 +2,7 @@ broilerjs
 =========
 
 [![Build Status](https://travis-ci.org/GordonLesti/broilerjs.svg?branch=master)](https://travis-ci.org/GordonLesti/broilerjs)
+[![Coverage Status](https://coveralls.io/repos/GordonLesti/broilerjs/badge.png?branch=master)](https://coveralls.io/r/GordonLesti/broilerjs?branch=master)
 [![Code Climate](https://codeclimate.com/github/GordonLesti/broilerjs/badges/gpa.svg)](https://codeclimate.com/github/GordonLesti/broilerjs)
 
 ## Build Status Matrix
