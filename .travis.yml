@@ -1,11 +1,18 @@
 language: node_js
+
 node_js:
-- '0.10'
+  - '0.10'
+
 before_script:
-- npm install -g grunt-cli
+  - npm install -g grunt-cli
+
 script:
-- grunt ci
+  - grunt ci
+
+after_script:
+  - grunt coveralls
+
 env:
   global:
-  - secure: OMc7y0MNzj931aDKYTEcf8mLedNpUDviJI/RoWvmjOcp3x7iEta30TrIj/rRe4QGvTjvA3KP1D/X/DuIds2azkI4rU7K8xEB3/me96fBaKxX1AFs8GvbwuH5REDoL4UJLrH67V5dQD5U1eVDno6juzG5S34npGrJcWYLO3HxorY=
-  - secure: kqPxYEy16Nr8h3bCwSmVLkgX5SddJSA7BuFaI/DYwJR3mFN2diC7oB9UJnqnT3k8D1iO6jZroEacuxHfe76X321abBJndxCeh2c27WnnxcRzKE4+G5MipB9886MwSL3aGDdtkc0zc/VkH/NUDj6I9ZRefrlNYM+r8dbNgEqd4EY=
+    - secure: OMc7y0MNzj931aDKYTEcf8mLedNpUDviJI/RoWvmjOcp3x7iEta30TrIj/rRe4QGvTjvA3KP1D/X/DuIds2azkI4rU7K8xEB3/me96fBaKxX1AFs8GvbwuH5REDoL4UJLrH67V5dQD5U1eVDno6juzG5S34npGrJcWYLO3HxorY=
+    - secure: kqPxYEy16Nr8h3bCwSmVLkgX5SddJSA7BuFaI/DYwJR3mFN2diC7oB9UJnqnT3k8D1iO6jZroEacuxHfe76X321abBJndxCeh2c27WnnxcRzKE4+G5MipB9886MwSL3aGDdtkc0zc/VkH/NUDj6I9ZRefrlNYM+r8dbNgEqd4EY=

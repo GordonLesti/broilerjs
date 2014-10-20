@@ -30,7 +30,27 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
         qunit: {
+            options: {
+                timout: 30000,
+                "--web-security": "no",
+                coverage: {
+                    src: [ "src/broiler.js" ],
+                    instrumentedFiles: "temp/",
+                    htmlReport: "build/report/coverage",
+                    lcovReport: "build/report/lcov",
+                    linesThresholdPct: 0
+                }
+            },
             all: "test/index.html"
+        },
+        coveralls: {
+            options: {
+                // do not fail if coveralls fails
+                force: true
+            },
+            main_target: {
+                src: "build/report/lcov/lcov.info"
+            }
         },
         jshint: {
             options: {
