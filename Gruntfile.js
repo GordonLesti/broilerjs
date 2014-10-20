@@ -48,9 +48,11 @@ module.exports = function(grunt) {
                 // do not fail if coveralls fails
                 force: true
             },
+            // jscs:disable requireCamelCaseOrUpperCaseIdentifiers
             main_target: {
                 src: "build/report/lcov/lcov.info"
             }
+            // jscs:enable requireCamelCaseOrUpperCaseIdentifiers
         },
         jshint: {
             options: {
