@@ -1,8 +1,13 @@
 broilerjs
 =========
 
+Master:
 [![Build Status](https://travis-ci.org/GordonLesti/broilerjs.svg?branch=master)](https://travis-ci.org/GordonLesti/broilerjs)
 [![Coverage Status](https://coveralls.io/repos/GordonLesti/broilerjs/badge.png?branch=master)](https://coveralls.io/r/GordonLesti/broilerjs?branch=master)
+Develop:
+[![Build Status](https://travis-ci.org/GordonLesti/broilerjs.svg?branch=develop)](https://travis-ci.org/GordonLesti/broilerjs)
+[![Coverage Status](https://coveralls.io/repos/GordonLesti/broilerjs/badge.png?branch=develop)](https://coveralls.io/r/GordonLesti/broilerjs?branch=develop)
+
 [![Code Climate](https://codeclimate.com/github/GordonLesti/broilerjs/badges/gpa.svg)](https://codeclimate.com/github/GordonLesti/broilerjs)
 
 ## Build Status Matrix
@@ -10,6 +15,10 @@ broilerjs
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/broilerjs.svg)](https://saucelabs.com/u/broilerjs)
 
 A simple, lightweight jQuery plugin to get the color of an image pixel by click.
+
+## RELEASE INFORMATION
+
+*broilerjs 1.0.0*
 
 ## Installation
 
