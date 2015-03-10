@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function( grunt ) {
     "use strict";
     var key, browsers = [
         // Windows 7
@@ -27,8 +27,8 @@ module.exports = function(grunt) {
         { browserName: "android", version: "4.4", platform: "Linux" }
     ];
 
-    grunt.initConfig({
-        pkg: grunt.file.readJSON("package.json"),
+    grunt.initConfig( {
+        pkg: grunt.file.readJSON( "package.json" ),
         qunit: {
             options: {
                 timout: 30000,
@@ -106,17 +106,17 @@ module.exports = function(grunt) {
             }
         },
         watch: {}
-    });
+    } );
 
     // Loading dependencies
-    for (key in grunt.file.readJSON("package.json").devDependencies) {
-        if (key !== "grunt" && key.indexOf("grunt") === 0) {
-            grunt.loadNpmTasks(key);
+    for ( key in grunt.file.readJSON( "package.json" ).devDependencies ) {
+        if ( key !== "grunt" && key.indexOf( "grunt" ) === 0 ) {
+            grunt.loadNpmTasks( key );
         }
     }
 
-    grunt.registerTask("default", [ "jshint", "jscs", "jsonlint", "qunit", "uglify" ]);
-    grunt.registerTask("dev", [ "connect", "watch" ]);
-    grunt.registerTask("saucelabs", [ "connect", "saucelabs-qunit" ]);
-    grunt.registerTask("ci", [ "jshint", "jscs", "jsonlint", "qunit", "saucelabs" ]);
+    grunt.registerTask( "default", [ "jshint", "jscs", "jsonlint", "qunit", "uglify" ] );
+    grunt.registerTask( "dev", [ "connect", "watch" ] );
+    grunt.registerTask( "saucelabs", [ "connect", "saucelabs-qunit" ] );
+    grunt.registerTask( "ci", [ "jshint", "jscs", "jsonlint", "qunit", "saucelabs" ] );
 };
