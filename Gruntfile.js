@@ -2,29 +2,33 @@ module.exports = function( grunt ) {
     "use strict";
     var key, browsers = [
         // Windows 7
-        { browserName: "chrome", version: "37", platform: "Windows 7" },
-        { browserName: "firefox", version: "32", platform: "Windows 7" },
+        { browserName: "chrome", version: "46", platform: "Windows 7" },
+        { browserName: "firefox", version: "41", platform: "Windows 7" },
         { browserName: "internet explorer", version: "9", platform: "Windows 7" },
         { browserName: "internet explorer", version: "10", platform: "Windows 7" },
         { browserName: "internet explorer", version: "11", platform: "Windows 7" },
         // Windows 8.1
-        { browserName: "chrome", version: "37", platform: "Windows 8.1" },
-        { browserName: "firefox", version: "32", platform: "Windows 8.1" },
+        { browserName: "chrome", version: "46", platform: "Windows 8.1" },
+        { browserName: "firefox", version: "41", platform: "Windows 8.1" },
         { browserName: "internet explorer", version: "11", platform: "Windows 8.1" },
+        // Windows 10
+        { browserName: "chrome", version: "46", platform: "Windows 10" },
+        { browserName: "firefox", version: "41", platform: "Windows 10" },
+        { browserName: "internet explorer", version: "11", platform: "Windows 10" },
+        { browserName: "internet explorer", version: "20", platform: "Windows 10" },
         // Mac
-        { browserName: "chrome", version: "36", platform: "OS X 10.9" },
-        { browserName: "firefox", version: "32", platform: "OS X 10.9" },
-        { browserName: "safari", version: "6", platform: "OS X 10.8" },
-        { browserName: "safari", version: "7", platform: "OS X 10.9" },
+        { browserName: "chrome", version: "46", platform: "OS X 10.11" },
+        { browserName: "firefox", version: "41", platform: "OS X 10.11" },
+        { browserName: "safari", version: "8", platform: "OS X 10.11" },
         // Linux
-        { browserName: "chrome", version: "36", platform: "Linux" },
-        { browserName: "firefox", version: "32", platform: "Linux" },
+        { browserName: "chrome", version: "46", platform: "Linux" },
+        { browserName: "firefox", version: "41", platform: "Linux" },
         // iOS
-        { browserName: "iphone", version: "7.1", platform: "OS X 10.9" },
-        { browserName: "ipad", version: "7.1", platform: "OS X 10.9" },
+        { browserName: "iphone", version: "9.1", platform: "OS X 10.11" },
+        { browserName: "ipad", version: "9.1", platform: "OS X 10.11" },
         // Android
-        { browserName: "android", version: "4.3", platform: "Linux" },
-        { browserName: "android", version: "4.4", platform: "Linux" }
+        { browserName: "android", version: "4.4", platform: "Linux" },
+        { browserName: "android", version: "5.1", platform: "Linux" }
     ];
 
     grunt.initConfig( {
