@@ -114,7 +114,8 @@ module.exports = function( grunt ) {
                     concurrency: 3,
                     browsers: browsers,
                     testname: "qunit tests",
-                    tags: [ "master" ]
+                    tags: [ "master" ],
+                    pollInterval: 3000
                 }
             }
         },
