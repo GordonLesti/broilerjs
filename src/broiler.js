@@ -1,12 +1,15 @@
 ( function( factory ) {
     "use strict";
     if ( typeof define === "function" && define.amd ) {
+
         // AMD
         define( [ "jquery" ], factory );
     } else if ( typeof exports === "object" ) {
+
         // CommonJs
         factory( require( "jquery" ) );
     } else {
+
         // Browser globals
         factory( jQuery );
     }

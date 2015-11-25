@@ -1,8 +1,10 @@
 // https://github.com/axemclion/grunt-saucelabs/issues/84
 QUnit.done( function( details ) {
     "use strict";
+
     // jscs:disable requireCamelCaseOrUpperCaseIdentifiers
     window.global_test_results = details;
+
     // jscs:enable requireCamelCaseOrUpperCaseIdentifiers
 } );
 
