@@ -29,12 +29,12 @@ module.exports = function( grunt ) {
         { browserName: "firefox", version: "41", platform: "Linux" },
 
         // iOS
-        { browserName: "iphone", version: "8.4"},
-        { browserName: "ipad", version: "8.4"},
+        { browserName: "iphone", version: "8.4" },
+        { browserName: "ipad", version: "8.4" },
 
         // Android
-        { browserName: "android", version: "4.4"},
-        { browserName: "android", version: "5.1"}
+        { browserName: "android", version: "4.4" },
+        { browserName: "android", version: "5.1" }
     ];
 
     grunt.initConfig( {
