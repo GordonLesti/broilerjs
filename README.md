@@ -1,14 +1,10 @@
 broilerjs
 =========
 
-Master:
-[![Build Status](https://travis-ci.org/GordonLesti/broilerjs.svg?branch=master)](https://travis-ci.org/GordonLesti/broilerjs)
-[![Coverage Status](https://coveralls.io/repos/GordonLesti/broilerjs/badge.png?branch=master)](https://coveralls.io/r/GordonLesti/broilerjs?branch=master)
-Develop:
-[![Build Status](https://travis-ci.org/GordonLesti/broilerjs.svg?branch=develop)](https://travis-ci.org/GordonLesti/broilerjs)
-[![Coverage Status](https://coveralls.io/repos/GordonLesti/broilerjs/badge.png?branch=develop)](https://coveralls.io/r/GordonLesti/broilerjs?branch=develop)
-
-[![Code Climate](https://codeclimate.com/github/GordonLesti/broilerjs/badges/gpa.svg)](https://codeclimate.com/github/GordonLesti/broilerjs)
+Branch | Build Status | Coverage
+--- | --- | ---
+Master | [![Build Status](https://img.shields.io/travis/GordonLesti/broilerjs/master.svg?style=flat-square)](https://travis-ci.org/GordonLesti/broilerjs) | [![Coverage Status](https://img.shields.io/coveralls/GordonLesti/broilerjs/master.svg?style=flat-square)](https://coveralls.io/r/GordonLesti/broilerjs?branch=master)
+Develop | [![Build Status](https://img.shields.io/travis/GordonLesti/broilerjs/develop.svg?style=flat-square)](https://travis-ci.org/GordonLesti/broilerjs) | [![Coverage Status](https://img.shields.io/coveralls/GordonLesti/broilerjs/develop.svg?style=flat-square)](https://coveralls.io/r/GordonLesti/broilerjs?branch=develop)
 
 ## Build Status Matrix
 
