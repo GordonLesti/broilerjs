@@ -29,12 +29,12 @@ module.exports = function( grunt ) {
         { browserName: "firefox", version: "41", platform: "Linux" },
 
         // iOS
-        { browserName: "iphone", version: "9.1", platform: "OS X 10.11" },
-        { browserName: "ipad", version: "9.1", platform: "OS X 10.11" },
+        { browserName: "iphone", version: "8.4"},
+        { browserName: "ipad", version: "8.4"},
 
         // Android
-        { browserName: "android", version: "4.4", platform: "Linux" },
-        { browserName: "android", version: "5.1", platform: "Linux" }
+        { browserName: "android", version: "4.4"},
+        { browserName: "android", version: "5.1"}
     ];
 
     grunt.initConfig( {
@@ -114,8 +114,7 @@ module.exports = function( grunt ) {
                     concurrency: 3,
                     browsers: browsers,
                     testname: "qunit tests",
-                    tags: [ "master" ],
-                    pollInterval: 3000
+                    tags: [ "master" ]
                 }
             }
         },
