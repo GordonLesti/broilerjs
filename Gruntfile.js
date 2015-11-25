@@ -18,12 +18,11 @@ module.exports = function( grunt ) {
         { browserName: "chrome", version: "46", platform: "Windows 10" },
         { browserName: "firefox", version: "41", platform: "Windows 10" },
         { browserName: "internet explorer", version: "11", platform: "Windows 10" },
-        { browserName: "internet explorer", version: "20", platform: "Windows 10" },
 
         // Mac
         { browserName: "chrome", version: "46", platform: "OS X 10.11" },
         { browserName: "firefox", version: "41", platform: "OS X 10.11" },
-        { browserName: "safari", version: "8", platform: "OS X 10.11" },
+        { browserName: "safari", version: "9", platform: "OS X 10.11" },
 
         // Linux
         { browserName: "chrome", version: "46", platform: "Linux" },
