@@ -14,9 +14,14 @@ A simple, lightweight jQuery plugin to get the color of an image pixel by click.
 
 ## RELEASE INFORMATION
 
-*broilerjs 1.0.0*
+*broilerjs 1.0.1*
 
 ## Installation
+
+Several quick start options are available:
+* [Download the latest release](https://github.com/GordonLesti/broilerjs/archive/1.0.1.zip).
+* Clone the repo: `git clone https://github.com/GordonLesti/broilerjs.git`.
+* Install with [Bower](http://bower.io): `bower install broilerjs`.
 
 Include script *after* the jQuery library (unless you are packaging scripts somehow else):
 
