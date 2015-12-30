@@ -27,5 +27,8 @@
     "test",
     "build",
     "demo"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
 }
