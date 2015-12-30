@@ -18,7 +18,7 @@
     "color"
   ],
   "author": "Gordon Lesti",
-  "license": "MPL",
+  "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/GordonLesti/broilerjs/issues"
   },
