@@ -85,7 +85,10 @@ module.exports = function( grunt ) {
         },
         jsonlint: {
             pkg: {
-                src: [ "package.json" ]
+                src: [
+                    "package.json",
+                    "bower.json"
+                ]
             }
         },
         uglify: {
@@ -94,7 +97,7 @@ module.exports = function( grunt ) {
             },
             build: {
                 src: "src/broiler.js",
-                dest: "build/broiler-<%= pkg.version %>.min.js"
+                dest: "dist/broiler.min.js"
             }
         },
         connect: {
