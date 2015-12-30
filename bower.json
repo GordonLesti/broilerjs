@@ -1,0 +1,31 @@
+{
+  "name": "broilerjs",
+  "version": "1.0.1",
+  "homepage": "https://github.com/GordonLesti/broilerjs",
+  "authors": [
+    "Gordon Lesti <info@gordonlesti.com>"
+  ],
+  "description": "A simple, lightweight jQuery plugin to get the color of an image pixel by click.",
+  "main": "src/broiler.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "jquery",
+    "broiler",
+    "image",
+    "pixel",
+    "color"
+  ],
+  "license": "MPL-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "build",
+    "demo"
+  ]
+}
