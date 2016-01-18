@@ -33,7 +33,7 @@ The plugin can also be loaded as AMD or CommonJS module.
 
 ## Demo
 
-Here is a small [demo](http://gordonlesti.com/broilerjs/demo/rainbow.html)
+Here is a small [demo](https://gordonlesti.com/broiler-demo-rainbow/)
 
 ## Usage
 
