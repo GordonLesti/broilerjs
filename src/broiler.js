@@ -16,8 +16,8 @@
 }( function( $ ) {
     "use strict";
     $.fn.broiler = function( callBack ) {
-        var image = this[0],
-            canvas = $( "<canvas/>" )[0],
+        var image = this[ 0 ],
+            canvas = $( "<canvas/>" )[ 0 ],
             imageData;
         canvas.width = image.width;
         canvas.height = image.height;
@@ -31,10 +31,10 @@
             y = Math.round( event.clientY - offset.top + scrollTop );
             start = ( x + y * image.width ) * 4;
             callBack( {
-                r: imageData[start],
-                g: imageData[start + 1],
-                b: imageData[start + 2],
-                a: imageData[start + 3]
+                r: imageData[ start ],
+                g: imageData[ start + 1 ],
+                b: imageData[ start + 2 ],
+                a: imageData[ start + 3 ]
             } );
         } );
     };

@@ -19,7 +19,7 @@ module.exports = function( grunt ) {
         { browserName: "firefox", version: "41", platform: "Windows 10" },
         { browserName: "internet explorer", version: "11", platform: "Windows 10" },
 
-        // Mac
+        // Apple Mac
         { browserName: "chrome", version: "46", platform: "OS X 10.11" },
         { browserName: "firefox", version: "41", platform: "OS X 10.11" },
         { browserName: "safari", version: "9", platform: "OS X 10.11" },
@@ -28,11 +28,11 @@ module.exports = function( grunt ) {
         { browserName: "chrome", version: "46", platform: "Linux" },
         { browserName: "firefox", version: "41", platform: "Linux" },
 
-        // iOS
+        // Apple iOS
         { browserName: "iphone", version: "8.4" },
         { browserName: "ipad", version: "8.4" },
 
-        // Android
+        // Google Android
         { browserName: "android", version: "4.4" },
         { browserName: "android", version: "5.1" }
     ];
@@ -55,8 +55,6 @@ module.exports = function( grunt ) {
         },
         coveralls: {
             options: {
-
-                // do not fail if coveralls fails
                 force: true
             },
 
@@ -124,7 +122,6 @@ module.exports = function( grunt ) {
         watch: {}
     } );
 
-    // Loading dependencies
     for ( key in grunt.file.readJSON( "package.json" ).devDependencies ) {
         if ( key !== "grunt" && key.indexOf( "grunt" ) === 0 ) {
             grunt.loadNpmTasks( key );

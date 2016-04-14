@@ -9,10 +9,10 @@ before_script:
   - npm install -g grunt-cli
 
 script:
-  - grunt ci
+  - ./node_modules/.bin/grunt ci
 
 after_script:
-  - grunt coveralls
+  - ./node_modules/.bin/grunt coveralls
 
 env:
   global:
