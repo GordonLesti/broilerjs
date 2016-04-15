@@ -1,8 +1,10 @@
 # broilerjs
 
+[![Latest Version on npm][ico-version]][link-npm]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
 [![Coverage Status][ico-coverall]][link-coveralls]
+[![Total Downloads][ico-downloads]][link-downloads]
 
 A simple, lightweight jQuery plugin to get the color of an image pixel by click. Here is a small [demo](https://gordonlesti.com/broiler-demo-rainbow/)
 
@@ -62,11 +64,15 @@ If you discover any security related issues, please email info@gordonlesti.com i
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-version]: https://img.shields.io/npm/v/broilerjs.svg?style=flat-square
+[ico-license]: https://img.shields.io/github/license/GordonLesti/broilerjs.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/GordonLesti/broilerjs/master.svg?style=flat-square
 [ico-coverall]: https://img.shields.io/coveralls/GordonLesti/broilerjs/master.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/npm/dt/broilerjs.svg?style=flat-square
 
+[link-npm]: https://www.npmjs.com/package/broilerjs
 [link-travis]: https://travis-ci.org/GordonLesti/broilerjs
 [link-coveralls]: https://coveralls.io/r/GordonLesti/broilerjs
+[link-downloads]: https://www.npmjs.com/package/broilerjs
 [link-author]: https://gordonlesti.com/
 [link-contributors]: ../../contributors
